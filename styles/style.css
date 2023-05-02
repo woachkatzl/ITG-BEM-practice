@@ -1,5 +1,45 @@
+.root {
+    min-width: 320px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../assets/background.svg);
+    background-repeat: no-repeat;
+    background-position: 720px 100px;
+}
+
 a {
     text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 150px;
+    margin-left: 5%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 542px;
+    margin-left: 9%;
+    margin-bottom: 60px;
+}
+
+.main__txt {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    margin-left: 9%;
 }
 
 .header__btn,
@@ -14,6 +54,16 @@ a {
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     font-size: 1.25rem;
+    line-height: 160%;
+}
+
+.nav__link {
+    margin-right: 34px;
+    color: #5222D0;
+}
+
+.nav__link:hover {
+    color: #000000;
 }
 
 .header__btn,
