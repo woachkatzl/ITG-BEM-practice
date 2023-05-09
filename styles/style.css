@@ -95,8 +95,21 @@ a {
 
 /* FEATURES PAGE */
 
+.features {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.features__content {
+    display: grid;
+}
+
 .feature__image {
     width: 100%;
+}
+
+.features__title {
+    margin-bottom: 0;
 }
 
 .features__title,
@@ -118,13 +131,11 @@ a {
     font-weight: 300;
 }
 
-.features {
-    width: 88%;
-    margin: 0 auto;
-}
-
 .subscribe__content {
     height: 100%;
+    padding-left: 18px;
+    border: 1px solid #EC615B;
+    background-color: #EC615B;
 }
 
 .subscribe__email {
@@ -142,6 +153,16 @@ a {
     border-radius: 100px;
 }
 
+.feature:hover {
+    border: 1px solid #EC615B;
+}
+
+.subscribe__btn:hover {
+    cursor: pointer;
+}
+
+
+/* DESKTOP */
 
 @media screen and (min-width: 1024px) {
 
@@ -189,9 +210,6 @@ a {
     .intro__txt {
         margin-top: 0;
         margin-bottom: 50px;
-    }
-
-    .intro__txt {
         font-size: 1.25rem;
         line-height: 160%;
     }
@@ -207,13 +225,11 @@ a {
     /* FEATURES PAGE */
 
     .features__title {
-        margin-bottom: 0;
         margin-left: 35px;
         font-size: 3.75rem;
     }
 
     .features__content {
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
     }
 
@@ -233,17 +249,13 @@ a {
         line-height: 2rem;
     }
 
-    .subscribe__content {
-        padding-left: 18px;
-        border: 1px solid #EC615B;
-        background-color: #EC615B;
-    }
-
     .subscribe__btn {
         font-size: 0.8125rem;
     }
 }
 
+
+/* TABLET */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
@@ -293,9 +305,6 @@ a {
     .intro__txt {
         margin-top: 0;
         margin-bottom: 50px;
-    }
-
-    .intro__txt {
         font-size: 1rem;
         line-height: 160%;
     }
@@ -307,8 +316,45 @@ a {
     .intro__btn span {
         font-size: 1.75rem;
     }
+
+    /* FEATURES PAGE */
+
+    .features__title {
+        margin-left: 35px;
+        font-size: 3rem;
+    }
+
+    .features__content {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .feature,
+    .subscribe {
+        padding: 26px 35px 25px 40px;
+    }
+
+    .feature__title,
+    .subscribe__title {
+        font-size: 1.5rem;
+    }
+
+    .feature__txt,
+    .subscribe__email {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    .subscribe__content {
+        padding-bottom: 20px;
+    }
+
+    .subscribe__btn {
+        font-size: 0.75rem;
+    }
 }
 
+
+/* MOBILE */
 
 @media screen and (max-width: 767px) {
 
@@ -337,6 +383,7 @@ a {
     .nav {
         flex-direction: column;
         justify-content: space-around;
+        margin-bottom: 30px;
     }
 
     .nav__link {
