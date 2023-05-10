@@ -420,4 +420,39 @@ a {
     .intro__btn span {
         font-size: 1.5rem;
     }
+
+    /* FEATURES PAGE */
+
+    .features__title {
+        font-size: 1.75rem;
+    }
+
+    .features__content {
+        grid-template-columns: minmax(300px, 1fr);
+        margin-bottom: 30px;
+    }
+
+    .feature,
+    .subscribe {
+        padding: 26px 20px 15px 0;
+    }
+
+    .feature__title,
+    .subscribe__title {
+        font-size: 1.25rem;
+    }
+
+    .feature__txt,
+    .subscribe__email {
+        font-size: 0.875rem;
+        line-height: 1.75rem;
+    }
+
+    .subscribe__content {
+        padding-bottom: 20px;
+    }
+
+    .subscribe__btn {
+        font-size: 0.75rem;
+    }
 }
